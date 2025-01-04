@@ -27,6 +27,7 @@ class OpenAIModel(dspy.OpenAI):
         model: str = "gpt-4o-mini",
         api_key: Optional[str] = None,
         model_type: Literal["chat", "text"] = None,
+        base_url="https://freeapi.openai520.top/"
         **kwargs,
     ):
         super().__init__(model=model, api_key=api_key, model_type=model_type, **kwargs)
